@@ -1,0 +1,129 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050038" />
+      <stop offset="100%" stop-color="#0A064A" />
+    </linearGradient>
+
+    <pattern id="dotGrid" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#FFFFFF" fill-opacity="0.08" />
+    </pattern>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+  <rect width="1200" height="630" fill="url(#dotGrid)" />
+
+  <!-- Ambient Glow -->
+  <circle cx="200" cy="150" r="300" fill="#4262FF" fill-opacity="0.12" filter="blur(80px)" />
+  <circle cx="1050" cy="450" r="280" fill="#FFD02F" fill-opacity="0.08" filter="blur(90px)" />
+
+  <!-- Left Content (Brand & Typography) -->
+  <g transform="translate(90, 110)">
+    <!-- App Icon & Category Pill -->
+    <g>
+      <rect x="0" y="0" width="56" height="56" rx="16" fill="#FFD02F" />
+      <path d="M16 28 L24 36 L40 20" fill="none" stroke="#050038" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+      <rect x="72" y="10" width="132" height="34" rx="17" fill="#4262FF" fill-opacity="0.35" stroke="#4262FF" stroke-width="1.5" />
+      <text x="138" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif" font-size="13" font-weight="700" fill="#FFD02F" text-anchor="middle" letter-spacing="1">TODAY WORK</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="58" font-weight="800" fill="#FFFFFF" letter-spacing="-1">
+      오늘업무
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="23" font-weight="600" fill="#FFD02F">
+      매일의 업무를 명쾌하게 계획하는 스마트 데일리 플래너
+    </text>
+
+    <!-- Description Paragraph -->
+    <text x="0" y="235" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="16" font-weight="400" fill="#A5A2B8" opacity="0.95">
+      오늘 꼭 끝낼 업무 체크 · 중요 일정 타임라인 · 통화 메모 &amp; AI 순서 추천
+    </text>
+    <text x="0" y="265" font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="16" font-weight="400" fill="#A5A2B8" opacity="0.95">
+      퇴근 전 일일 업무 회고와 Google Sheets 원클릭 연동까지 지원합니다.
+    </text>
+
+    <!-- Feature Pills Row -->
+    <g transform="translate(0, 315)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="130" height="38" rx="19" fill="#1B174F" stroke="#37326C" stroke-width="1" />
+      <circle cx="20" cy="19" r="6" fill="#00875A" />
+      <text x="36" y="24" font-family="sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">업무 체크리스트</text>
+
+      <!-- Pill 2 -->
+      <rect x="142" y="0" width="130" height="38" rx="19" fill="#1B174F" stroke="#37326C" stroke-width="1" />
+      <circle cx="162" cy="19" r="6" fill="#4262FF" />
+      <text x="178" y="24" font-family="sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">AI 우선순위 정렬</text>
+
+      <!-- Pill 3 -->
+      <rect x="284" y="0" width="144" height="38" rx="19" fill="#1B174F" stroke="#37326C" stroke-width="1" />
+      <circle cx="304" cy="19" r="6" fill="#FFD02F" />
+      <text x="320" y="24" font-family="sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">구글 시트 자동 기록</text>
+    </g>
+  </g>
+
+  <!-- Right Visual Mockup Cards -->
+  <g transform="translate(680, 85)" filter="url(#cardShadow)">
+    <!-- Main White Card Container -->
+    <rect x="0" y="0" width="430" height="460" rx="24" fill="#FFFFFF" stroke="#E5E5ED" stroke-width="1.5" />
+
+    <!-- Card Header -->
+    <g transform="translate(30, 30)">
+      <rect x="0" y="0" width="76" height="26" rx="13" fill="#F0EDFF" stroke="#D5CCFF" stroke-width="1" />
+      <text x="38" y="17" font-family="sans-serif" font-size="11" font-weight="700" fill="#4262FF" text-anchor="middle">오늘 09.11</text>
+
+      <text x="90" y="19" font-family="sans-serif" font-size="16" font-weight="700" fill="#050038">오늘의 업무 진행률</text>
+
+      <!-- Progress bar -->
+      <rect x="0" y="44" width="370" height="12" rx="6" fill="#F4F4F7" />
+      <rect x="0" y="44" width="295" height="12" rx="6" fill="#4262FF" />
+      <text x="370" y="38" font-family="sans-serif" font-size="14" font-weight="800" fill="#050038" text-anchor="end">80%</text>
+    </g>
+
+    <!-- Task Item 1 (Checked) -->
+    <g transform="translate(30, 115)">
+      <rect x="0" y="0" width="370" height="66" rx="14" fill="#F9F9FB" stroke="#E5E5ED" stroke-width="1" />
+      <circle cx="30" cy="33" r="12" fill="#050038" />
+      <path d="M24 33 L28 37 L36 29" fill="none" stroke="#FFD02F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="56" y="30" font-family="sans-serif" font-size="14" font-weight="600" fill="#89869E" text-decoration="line-through">신규 고객사 제안서 최종 검토</text>
+      <text x="56" y="48" font-family="sans-serif" font-size="11" font-weight="500" fill="#A5A2B8">프로젝트 A · 60분 소요 · 완료</text>
+    </g>
+
+    <!-- Task Item 2 (Active Sticky Yellow Style) -->
+    <g transform="translate(30, 195)" filter="url(#subtleShadow)">
+      <rect x="0" y="0" width="370" height="74" rx="14" fill="#FFF8D6" stroke="#F5E59C" stroke-width="1" />
+      <circle cx="30" cy="37" r="12" fill="#FFFFFF" stroke="#D8C265" stroke-width="2" />
+      <text x="56" y="33" font-family="sans-serif" font-size="14" font-weight="700" fill="#050038">디자인 시스템 컴포넌트 검수</text>
+      <text x="56" y="52" font-family="sans-serif" font-size="11" font-weight="600" fill="#6B5B00">마감: 18:00 · 예상 90분 · [AI 우선 추천]</text>
+    </g>
+
+    <!-- Task Item 3 (Schedule Timeline mini) -->
+    <g transform="translate(30, 283)">
+      <rect x="0" y="0" width="370" height="66" rx="14" fill="#FFFFFF" stroke="#E5E5ED" stroke-width="1" />
+      <rect x="18" y="18" width="52" height="30" rx="8" fill="#F0EDFF" />
+      <text x="44" y="38" font-family="sans-serif" font-size="12" font-weight="700" fill="#4262FF" text-anchor="middle">14:00</text>
+      <text x="82" y="34" font-family="sans-serif" font-size="13" font-weight="600" fill="#050038">개발팀 주간 스프린트 회의</text>
+      <text x="82" y="50" font-family="sans-serif" font-size="11" font-weight="500" fill="#5F5C7A">온라인 미팅룸 · 알림 15분 전</text>
+    </g>
+
+    <!-- Mini Bottom Status Pill -->
+    <g transform="translate(30, 368)">
+      <rect x="0" y="0" width="370" height="58" rx="14" fill="#050038" />
+      <circle cx="28" cy="29" r="10" fill="#FFD02F" />
+      <path d="M24 29 L27 32 L33 26" fill="none" stroke="#050038" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="48" y="27" font-family="sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">오늘 업무 정리 및 업로드 준비 완료</text>
+      <text x="48" y="44" font-family="sans-serif" font-size="11" font-weight="500" fill="#A5A2B8">Google Sheets 원클릭 동기화 지원</text>
+    </g>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
 {
   "name": "오늘업무",
-  "description": "매일 해야 할 업무를 계획하고 관리하는 초보자용 개인 업무 관리 웹앱",
+  "description": "오늘 꼭 해야 할 일에만 집중하세요. 마감일 알림, 중요 일정 타임라인, 통화 메모, AI 업무 순서 추천, Google Sheets 일일 기록까지 한눈에 관리하는 스마트 데일리 업무 플래너.",
   "requestFramePermissions": ["microphone", "camera"],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
