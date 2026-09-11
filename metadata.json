@@ -1,0 +1,6 @@
+{
+  "name": "오늘업무",
+  "description": "매일 해야 할 업무를 계획하고 관리하는 초보자용 개인 업무 관리 웹앱",
+  "requestFramePermissions": ["microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
